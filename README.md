@@ -2,6 +2,9 @@
 
 A Leiningen template for ClojureScript Quil project.
 
+Quil: https://github.com/quil/quil
+Quil on ClojureScript my dev repo: https://github.com/Norgat/quil
+
 ## License
 
 Copyright © 2014 Norgat
