@@ -14,5 +14,6 @@
   {:builds [{:source-paths ["src"]
              :compiler
              {:output-to "web/js/main.js"
+              :externs ["externs/processing-externs.js"]
               :optimizations :whitespace
               :pretty-print true}}]})
