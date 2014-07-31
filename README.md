@@ -1,6 +1,6 @@
 # quil-templates
 
-A Leiningen templates for [Quil](https://github.com/quil/quil) project.
+A Leiningen templates for [Quil](https://github.com/quil/quil).
 
 There are 2 templates:
 
