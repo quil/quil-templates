@@ -11,7 +11,7 @@ There are 2 templates:
 
 To create new quil project run following commands:
 
-`lein new quil my-project` - Quil on Clojure
+`lein new quil my-project` - Quil on Clojure  
 `lein new quil-cljs my-project` - Quil on ClojureScript
 
 ## License
