@@ -15,5 +15,5 @@
              :compiler
              {:output-to "web/js/main.js"
               :externs ["externs/processing-externs.js"]
-              :optimizations :whitespace
+              :optimizations :simple
               :pretty-print true}}]})
