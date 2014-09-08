@@ -14,7 +14,6 @@
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
              ["project.clj" (render "project.clj" data)]
              ["web/index.html" (render "index.html" data)]
-             ["web/js/processing-1.4.8.js" (render "processing-1.4.8.js" data)]
              ["LICENSE" (render "LICENSE" data)]
              [".gitignore" (render ".gitignore" data)]
              ["README.md" (render "README.md" data)])))
