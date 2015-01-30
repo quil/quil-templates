@@ -13,7 +13,7 @@
     (->files data
              ["src/{{sanitized}}/core.cljs" (render "core.cljs" data)]
              ["project.clj" (render "project.clj" data)]
-             ["web/index.html" (render "index.html" data)]
+             ["index.html" (render "index.html" data)]
              ["LICENSE" (render "LICENSE" data)]
              [".gitignore" (render ".gitignore" data)]
              ["README.md" (render "README.md" data)])))

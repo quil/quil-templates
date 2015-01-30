@@ -12,12 +12,12 @@
   {:color 0
    :angle 0})
 
-(defn update [state]
+(defn update-state [state]
   ; Update sketch state by changing circle color and position.
   {:color (mod (+ (:color state) 0.7) 255)
    :angle (+ (:angle state) 0.1)})
 
-(defn draw [state]
+(defn draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
   (q/background 240)
   ; Set circle color.
@@ -38,9 +38,8 @@
   ; setup function called only once, during sketch initialization.
   :setup setup
   ; update is called on each iteration before draw is called.
-  ; It updates sketch state.
-  :update update
-  :draw draw
+  :update update-state
+  :draw draw-state
   ; This sketch uses functional-mode middleware.
   ; Check quil wiki for more info about middlewares and particularly
   ; fun-mode.
