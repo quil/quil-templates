@@ -37,7 +37,7 @@
   :size [500 500]
   ; setup function called only once, during sketch initialization.
   :setup setup
-  ; update is called on each iteration before draw is called.
+  ; update-state is called on each iteration before draw-state.
   :update update-state
   :draw draw-state
   ; This sketch uses functional-mode middleware.

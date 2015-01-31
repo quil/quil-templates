@@ -45,7 +45,7 @@ echo
 echo "Building ClojureScript project."
 echo "-------------------------------"
 lein cljsbuild once
-google-chrome web/index.html
+google-chrome index.html
 
 echo
 echo "ClojureScript source."
