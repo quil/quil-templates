@@ -40,6 +40,7 @@
   ; update-state is called on each iteration before draw-state.
   :update update-state
   :draw draw-state
+  :features [:keep-on-top]
   ; This sketch uses functional-mode middleware.
   ; Check quil wiki for more info about middlewares and particularly
   ; fun-mode.
