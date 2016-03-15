@@ -12,7 +12,7 @@ REPL - run `(require '{{name}}.core)`.
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2016 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
