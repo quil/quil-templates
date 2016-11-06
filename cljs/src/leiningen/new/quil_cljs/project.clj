@@ -4,10 +4,10 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [quil "2.4.0"]
-                 [org.clojure/clojurescript "1.8.34"]]
+                 [quil "2.5.0"]
+                 [org.clojure/clojurescript "1.9.293"]]
 
-  :plugins [[lein-cljsbuild "1.1.3"]]
+  :plugins [[lein-cljsbuild "1.1.4"]]
   :hooks [leiningen.cljsbuild]
 
   :cljsbuild
