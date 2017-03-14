@@ -18,7 +18,7 @@ cd $PROJECT
 echo
 echo "Running Clojure project."
 echo "------------------------"
-lein run -m $PROJECT.core
+lein run
 
 echo
 echo "Clojure project source."
@@ -59,5 +59,3 @@ rm -rf cljs/$PROJECT
 echo
 echo "Done"
 echo "----"
-
-
