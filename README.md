@@ -1,6 +1,6 @@
 # quil-templates
 
-A Leiningen templates for [Quil](https://github.com/quil/quil).
+Leiningen templates for [Quil](https://github.com/quil/quil).
 
 There are 2 templates:
 
@@ -9,16 +9,16 @@ There are 2 templates:
 
 ## Usage
 
-To create a new quil project run following commands:
+To create a new quil project, run the following commands:
 
 `lein new quil my-project` - Quil on Clojure  
 `lein new quil-cljs my-project` - Quil on ClojureScript
 
-To run your Clojure project: 
+To run your Clojure project:
 
-`lein run -m my-project.core`
+`lein run`
 
-Make sure to replace `my-project` with a cool name for your project. 
+Make sure to replace `my-project` with a cool name for your project.
 
 ## License
 
