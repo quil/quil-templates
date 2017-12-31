@@ -14,7 +14,7 @@
   :cljsbuild
   {:builds [{:source-paths ["src"]
              :id "development"
-             :figwheel true
+             :figwheel {:on-jsload "{{sanitized}}.core/run-sketch"}
              :compiler
              {:main "{{sanitized}}.core"
               :output-to "resources/public/js/main.js"

@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>{{name}}</title>
-    <script src="js/main.js"></script>
   </head>
   <body>
     <canvas id="{{name}}"></canvas>
+    <script src="js/main.js"></script>
+    <script>{{sanitized}}.core.run_sketch()</script>
   </body>
 </html>
