@@ -7,14 +7,16 @@
                  [quil "2.6.0"]
                  [org.clojure/clojurescript "1.9.473"]]
 
-  :plugins [[lein-cljsbuild "1.1.5"]]
+  :plugins [[lein-cljsbuild "1.1.5"]
+            [lein-figwheel "0.5.14"]]
   :hooks [leiningen.cljsbuild]
 
   :cljsbuild
   {:builds [{:source-paths ["src"]
+             :id "development"
+             :figwheel true
              :compiler
-             {:output-to "js/main.js"
-              :output-dir "out"
-              :main "{{sanitized}}.core"
-              :optimizations :none
-              :pretty-print true}}]})
+             {:main "{{sanitized}}.core"
+              :output-to "resources/public/js/main.js"
+              :output-dir "resources/public/js/out"
+              :asset-path "js/out"}}]})
