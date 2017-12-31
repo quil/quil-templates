@@ -12,11 +12,21 @@
   :hooks [leiningen.cljsbuild]
 
   :cljsbuild
-  {:builds [{:source-paths ["src"]
-             :id "development"
+  {:builds [; development build with figwheel hot swap
+            {:id "development"
+             :source-paths ["src"]
              :figwheel {:on-jsload "{{sanitized}}.core/run-sketch"}
              :compiler
              {:main "{{sanitized}}.core"
               :output-to "resources/public/js/main.js"
-              :output-dir "resources/public/js/out"
-              :asset-path "js/out"}}]})
+              :output-dir "resources/public/js/development"
+              :asset-path "js/development"}}
+            ; minified and bundled build for deployment
+            {:id "optimized"
+             :source-paths ["src"]
+             :compiler
+             {:main "{{sanitized}}.core"
+              :output-to "resources/public/js/main.js"
+              :output-dir "resources/public/js/optimized"
+              :asset-path "js/optimized"
+              :optimizations :advanced}}]})

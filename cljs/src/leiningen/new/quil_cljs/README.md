@@ -1,10 +1,16 @@
-# test-js
+# {{name}}
 
 A Quil sketch designed to ... well, that part is up to you.
 
 ## Usage
 
-Run `lein figwheel` command. Wait for a while until you see `Successfully compiled "resources/public/js/main.js"` in your prompt. Open [localhost:3449](http://localhost:3449) in your browser. Whenever you save your sketch the browser will automatically refresh. For more information about Figwheel, check the [Figwheel repository on GitHub](https://github.com/bhauman/lein-figwheel).
+Run `lein figwheel` command. Wait for a while until you see `Successfully compiled "resources/public/js/main.js"` in your prompt. Open [localhost:3449](http://localhost:3449) in your browser.
+
+You can use this while developing your sketch. Whenever you save your source files the browser will automatically refresh everything, providing you with quick feedback. For more information about Figwheel, check the [Figwheel repository on GitHub](https://github.com/bhauman/lein-figwheel).
+
+## Publishing your sketch
+
+Before you publish your sketch, run `lein cljsbuild once optimized`. This will compile your code and run Google Closure Compiler with advanced optimizations. Take `resources/public/index.html` and `resources/public/js/main.js` and upload them to server of your choice.
 
 ## License
 
