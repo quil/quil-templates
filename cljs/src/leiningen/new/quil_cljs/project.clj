@@ -15,7 +15,7 @@
   {:builds [; development build with figwheel hot swap
             {:id "development"
              :source-paths ["src"]
-             :figwheel {:on-jsload "{{sanitized}}.core/run-sketch"}
+             :figwheel true
              :compiler
              {:main "{{sanitized}}.core"
               :output-to "resources/public/js/main.js"
