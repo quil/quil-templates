@@ -7,14 +7,26 @@
                  [quil "2.6.0"]
                  [org.clojure/clojurescript "1.9.473"]]
 
-  :plugins [[lein-cljsbuild "1.1.5"]]
+  :plugins [[lein-cljsbuild "1.1.5"]
+            [lein-figwheel "0.5.14"]]
   :hooks [leiningen.cljsbuild]
 
   :cljsbuild
-  {:builds [{:source-paths ["src"]
+  {:builds [; development build with figwheel hot swap
+            {:id "development"
+             :source-paths ["src"]
+             :figwheel true
              :compiler
-             {:output-to "js/main.js"
-              :output-dir "out"
-              :main "{{sanitized}}.core"
-              :optimizations :none
-              :pretty-print true}}]})
+             {:main "{{sanitized}}.core"
+              :output-to "resources/public/js/main.js"
+              :output-dir "resources/public/js/development"
+              :asset-path "js/development"}}
+            ; minified and bundled build for deployment
+            {:id "optimized"
+             :source-paths ["src"]
+             :compiler
+             {:main "{{sanitized}}.core"
+              :output-to "resources/public/js/main.js"
+              :output-dir "resources/public/js/optimized"
+              :asset-path "js/optimized"
+              :optimizations :advanced}}]})

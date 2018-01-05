@@ -32,15 +32,20 @@
       ; Draw the circle.
       (q/ellipse x y 100 100))))
 
-(q/defsketch {{name}}
-  :host "{{name}}"
-  :size [500 500]
-  ; setup function called only once, during sketch initialization.
-  :setup setup
-  ; update-state is called on each iteration before draw-state.
-  :update update-state
-  :draw draw-state
-  ; This sketch uses functional-mode middleware.
-  ; Check quil wiki for more info about middlewares and particularly
-  ; fun-mode.
-  :middleware [m/fun-mode])
+; this function is called in index.html
+(defn ^:export run-sketch []
+  (q/defsketch {{name}}
+    :host "{{name}}"
+    :size [500 500]
+    ; setup function called only once, during sketch initialization.
+    :setup setup
+    ; update-state is called on each iteration before draw-state.
+    :update update-state
+    :draw draw-state
+    ; This sketch uses functional-mode middleware.
+    ; Check quil wiki for more info about middlewares and particularly
+    ; fun-mode.
+    :middleware [m/fun-mode]))
+
+; uncomment this line to reset the sketch:
+; (run-sketch)
