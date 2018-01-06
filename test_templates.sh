@@ -44,8 +44,8 @@ cd $PROJECT
 echo
 echo "Building ClojureScript project."
 echo "-------------------------------"
-lein cljsbuild once
-google-chrome index.html
+google-chrome http://localhost:3449/ &
+lein figwheel
 
 echo
 echo "ClojureScript source."
