@@ -18,7 +18,7 @@ cd $PROJECT
 echo
 echo "Running Clojure project."
 echo "------------------------"
-lein run
+lein run -m ${PROJECT}.core
 
 echo
 echo "Clojure project source."
