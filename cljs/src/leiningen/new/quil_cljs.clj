@@ -15,5 +15,5 @@
              ["project.clj" (render "project.clj" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]
              ["LICENSE" (render "LICENSE" data)]
-             [".gitignore" (render ".gitignore" data)]
+             [".gitignore" (render "gitignore" data)]
              ["README.md" (render "README.md" data)])))

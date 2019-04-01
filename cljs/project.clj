@@ -1,4 +1,4 @@
-(defproject quil-cljs/lein-template "3.0.0.0"
+(defproject quil-cljs/lein-template "3.0.0.1"
   :description "Leiningen template for Quil ClojureScript project."
   :url "https://github.com/quil/quil-templates"
   :license {:name "Eclipse Public License"
