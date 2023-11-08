@@ -3,12 +3,12 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.10.1"]
-                 [quil "3.1.0"]
-                 [org.clojure/clojurescript "1.10.520"]]
+  :dependencies [[org.clojure/clojure "1.11.1"]
+                 [quil "4.3.1323"]
+                 [org.clojure/clojurescript "1.11.60"]]
 
-  :plugins [[lein-cljsbuild "1.1.7"]
-            [lein-figwheel "0.5.19"]]
+  :plugins [[lein-cljsbuild "1.1.8"]
+            [lein-figwheel "0.5.20"]]
   :hooks [leiningen.cljsbuild]
 
   :clean-targets ^{:protect false} ["resources/public/js"]
@@ -22,7 +22,7 @@
               :output-to "resources/public/js/main.js"
               :output-dir "resources/public/js/development"
               :asset-path "js/development"}}
-            ; minified and bundled build for deployment
+                                        ; minified and bundled build for deployment
             {:id "optimized"
              :source-paths ["src"]
              :compiler
